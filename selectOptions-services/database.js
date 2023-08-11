@@ -3,12 +3,12 @@ const {Pool} = require ('pg');
 class Database {
 constructor(){
     this.pool =  new Pool({
-        // user: 'postgres',
-        // host: 'localhost',
-        // database: 'denuncias_coppel',
-        // password: '2450',
-        // port: 5432,
-        connectionString: process.env.POSTGRES_URL + "?sslmode=require",
+        user: 'postgres',
+        host: 'localhost',
+        database: 'denuncias_coppel',
+        password: '2450',
+        port: 5432,
+        // connectionString: process.env.POSTGRES_URL + "?sslmode=require",
 
     });
 }
